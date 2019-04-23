@@ -7,7 +7,8 @@ $handle = fopen("dracula.txt", 'r');
 if($handle){
     while(($line = fgets($handle)) !== false){
         //do something with the line
-        echo $line;
+        echo '<p>' . $line . '</p>';
+        //echo "\n";
     }
     fclose($handle);
 } else{
